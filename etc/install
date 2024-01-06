@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Usage:
+# curl -fsSL https://github.com/sikso1892/dotfiles/etc/isntall | bash
+
+cat <<EOF
+   @sikso's              ███████╗██╗██╗     ███████╗███████╗
+   ██████╗  █████╗ ████████╗██╔════╝██║██║     ██╔════╝██╔════╝
+   ██╔══██╗██╔══██╗╚══██╔══╝█████╗  ██║██║     █████╗  ███████╗
+   ██║  ██║██║  ██║   ██║   ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+   ██████╔╝╚█████╔╝   ██║   ██║     ██║███████╗███████╗███████║
+   ╚═════╝  ╚═════╝   ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+EOF
+
+# Check minimal dependencies
+if ! command -v git &> /dev/null; then echo "ERROR: git not found. (Try $APT install git)"; exit; fi
+if ! command -v curl &> /dev/null; then echo "ERROR: curl not found. (Try $APT install curl)"; exit; fi
+if ! command -v wget &> /dev/null; then echo "ERROR: wget not found. (Try $APT install wget)"; exit; fi
